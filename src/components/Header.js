@@ -1,16 +1,24 @@
+//Imports
 import React from "react";
 import avatar from "../images/avatar.png";
+// import { Fragment } from 'react';
+// import {
+//   Navbar, NavbarBrand, Nav, NavItem, NavLink
+// } from 'reactstrap';
 
 function Header(props) {
     return (
-        <>
-            <nav className="navbar navbar-expand-lg navbar-light bg-light">
+        <header>
+            <nav className="navbar navbar-expand-lg navbar-light">
                 <div className="container-fluid">
-                    <a className="navbar-brand" href="#about-me">Menu</a>
-                    <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                        <span className="navbar-toggler-icon"></span>
+                    <a className="navbar-brand" href="#about-me">
+                        {/* <img className="me-2 nav-brand" src={avatar} alt="" width="30" height="30"/> */}
+                        Menu
+                    </a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarToggler" aria-controls="navbarToggler" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
                     </button>
-                    <div className="collapse navbar-collapse" id="navbarSupportedContent">
+                    <div className="collapse navbar-collapse" id="navbarToggler">
                         <ul className="navbar-nav me-auto mb-2 mb-lg-0">
                             <li className="nav-item">
                                 <a className="nav-link active" href="#link">About Me</a>
@@ -25,6 +33,11 @@ function Header(props) {
                                     Contact
                                 </a>
                             </li>
+                            <li className="nav-item">
+                                <a className="nav-link" href="#resume">
+                                    Resume
+                                </a>
+                            </li>
                         </ul>
                     </div>
                 </div>
@@ -34,7 +47,7 @@ function Header(props) {
                 <img src={avatar} alt="Avatar icon" />
                 <h2 className="text-shadow">Stephanie Cabrera</h2>
             </section>
-        </>
+        </header>
     );
 }
 
