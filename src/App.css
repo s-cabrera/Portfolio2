@@ -112,10 +112,35 @@ h2{
 }
 
 .navbar{
-  background-color: #bcc8d1;
+  background-color: #e3f2fd;
 }
 
 /*Text that is hovered over with defined text-shadow class will have a text-shadow*/
 .text-shadow:hover{
   text-shadow:5px 5px 5px rgb(80, 79, 79);
+}
+
+.project-card h2{
+  /*This will position the header on the middle left of the project card img */
+  width:max-content;
+  font-size: 100%;
+  padding: 15px;    
+  position: absolute; 
+  bottom: 10%;
+  color:rgb(219, 219, 219);
+}
+
+.project-card img{
+  /* position: relative; */
+  width:100%;
+  border: 2px solid var(--dark);
+  border-radius: 5px;
+}
+
+.project-github{
+  position: absolute; 
+  color:rgb(219, 219, 219);
+  right: 10%;
+  bottom: 8%;
+  font-size: 3em;
 }
