@@ -5,7 +5,7 @@ import stackoverflow from "../images/stack-overflow-brands.svg";
 
 function Footer(props) {
     return (
-        <footer className="container-fluid fixed-bottom bg-light py-2 border-top border-2 ">
+        <footer className="container-fluid bg-light py-2 mt-3 border-top border-2">
             <a className="mx-2" rel="noreferrer" target="_blank" href="https://github.com/s-cabrera/">
                 <img src={github} alt="Github link" width="30px" height="30px"/>
             </a>
