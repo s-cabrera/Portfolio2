@@ -1,29 +1,31 @@
 //Imports
 import React from "react";
-import { Nav, Navbar} from 'react-bootstrap';
-// import avatar from "../images/avatar.png";
+import { Nav, Navbar } from 'react-bootstrap';
+import avatar from "../images/avatar.png";
 
-function Header(props) {
+function Header({handlePageChange }) {
     return (
-        // <>
-            <Navbar bg="light" expand="lg" className="ms-3">
-                <Navbar.Brand href="">Home</Navbar.Brand>
-                <Navbar.Toggle aria-controls="basic-navbar-nav" />
-                <Navbar.Collapse id="basic-navbar-nav">
-                    <Nav className="me-auto">
-                        <Nav.Link href="">About Me</Nav.Link>
-                        <Nav.Link href="projects">Portfolio</Nav.Link>
-                        <Nav.Link href="contact">Contact</Nav.Link>
-                        <Nav.Link href="resume">Resume</Nav.Link>
-                    </Nav>
-                </Navbar.Collapse>
-            </Navbar>
-        //     {/* <section className="img-section position-relative">
-        // //         <button type="button" className="btn position-absolute top-5 start-0">Light</button>
-        // //         <img src={avatar} alt="Avatar icon" />
-        // //         <h2 className="text-shadow">Stephanie Cabrera</h2>
-        // //     </section> */}
-        // // </>
+        <Navbar bg="light" expand="lg">
+            <Navbar.Brand href="#" onClick={() => handlePageChange('Home')}>
+                <img
+                    src={avatar}
+                    width="30"
+                    height="30"
+                    className="d-inline-block align-top nav-logo mx-2" 
+                    alt="Avatar icon" 
+                />
+                Home
+            </Navbar.Brand>
+            <Navbar.Toggle aria-controls="basic-navbar-nav" />
+            <Navbar.Collapse id="basic-navbar-nav">
+                <Nav className="me-auto">
+                    <Nav.Link href="#" onClick={() => handlePageChange('About')}>About Me</Nav.Link>
+                    <Nav.Link href="#projects" onClick={() => handlePageChange('Portfolio')}>Portfolio</Nav.Link>
+                    <Nav.Link href="#contact" onClick={() => handlePageChange('Contact')}>Contact</Nav.Link>
+                    <Nav.Link href="#resume" onClick={() => handlePageChange('Resume')}>Resume</Nav.Link>
+                </Nav>
+            </Navbar.Collapse>
+        </Navbar>
     );
 }
 
