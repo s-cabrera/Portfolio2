@@ -3,7 +3,7 @@ import developer_photo from "../images/hiking_selfie_2.jpg";
 
 function AboutMe(props) {
     return (
-        <section className="container">
+        <section className="container py-3">
             <div className="row align-items-center justify-content-center gx-5">
                 <div className="col-10 col-lg-4 col-md-4 col-sm-10 me-auto"> 
                 <img src={developer_photo} className="img-thumbnail" alt="Developer_Photo" />
