@@ -144,3 +144,16 @@ h2{
   bottom: 8%;
   font-size: 3em;
 }
+
+.footer-icon{
+  color:rgb(66, 66, 66);
+  font-size: 2em;
+}
+.navbar{
+  color:rgb(219, 219, 219);
+  background: rgb(58, 58, 58);
+}
+
+.skill-list{
+  list-style-type: none;
+}
