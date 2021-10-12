@@ -1,24 +1,27 @@
+//----Imports -----//
+//React
 import React from "react";
-import github from "../images/github-brands.svg";
-import linkedin from "../images/linkedin-brands.svg";
-import stackoverflow from "../images/stack-overflow-brands.svg";
+
+//Font Awesome imports
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faGithub, faStackOverflow, faLinkedin } from "@fortawesome/free-brands-svg-icons";
 
 function Footer(props) {
     return (
-        <footer className="container-fluid bg-light py-2 mt-3 border-top border-2">
-            <a className="mx-2" rel="noreferrer" target="_blank" href="https://github.com/s-cabrera/">
-                <img src={github} alt="Github link" width="30px" height="30px"/>
+        <div className="bg-light d-flex flex-wrap justify-content-center align-items-center py-2">
+
+            <a className="mx-2 footer-icon" rel="noreferrer" target="_blank" href="https://github.com/s-cabrera/">
+                <FontAwesomeIcon icon={faGithub} />
             </a>
 
-            <a className="mx-2" rel="noreferrer" target="_blank" href="https://www.linkedin.com/in/stephanie-cabrera-809999139/">
-                <img src={linkedin} alt="LinkedIn Link" width="30px" height="30px" />
+            <a className="mx-2 footer-icon" rel="noreferrer" target="_blank" href="https://www.linkedin.com/in/stephanie-cabrera-809999139/">
+                <FontAwesomeIcon icon={faLinkedin} />
             </a>
 
-            <a className="mx-2" rel="noreferrer" target="_blank" href="https://stackoverflow.com/users/15790246/stephanie-cabrera">
-                <img src={stackoverflow} alt="Stack Overflow link" width="30px" height="30px"/>
+            <a className="mx-2 footer-icon" rel="noreferrer" target="_blank" href="https://stackoverflow.com/users/15790246/stephanie-cabrera">
+                <FontAwesomeIcon icon={faStackOverflow} />
             </a>
-        
-        </footer>
+        </div>
     )
 }
 
