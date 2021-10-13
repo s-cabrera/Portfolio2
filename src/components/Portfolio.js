@@ -1,7 +1,7 @@
 //Imports
 import React from "react";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faGithub, faLinkedin, faStackOverflow } from "@fortawesome/free-brands-svg-icons";
+import { faGithub } from "@fortawesome/free-brands-svg-icons";
 
 //Image Imports
 // import picture from "../images/hiking_selfie_2.jpg"
@@ -77,7 +77,7 @@ function Portfolio(props) {
                             {/* <img src={picture} className="img-fluid" alt="photo3" /> */}
                             {/* <i class="fab fa-github project-github" href="https://github.com/s-cabrera/Weather_Dashboard" style={{cursor: "pointer"}}></i> */}
                             <a href="https://github.com/s-cabrera/Weather_Dashboard" className="project-github" style={{cursor: "pointer"}} rel="noreferrer" target="_blank" >
-                                <FontAwesomeIcon icon={faLinkedin}/>
+                                <FontAwesomeIcon icon={faGithub}/>
                             </a>
                         </a>
                     </div>
@@ -90,7 +90,7 @@ function Portfolio(props) {
                             {/* <img src={picture} className="img-fluid" alt="photo3" /> */}
                             {/* <i class="fab fa-github project-github" href="https://github.com/s-cabrera/Pokemon_Search" style={{cursor: "pointer"}}></i> */}
                             <a href="https://github.com/s-cabrera/Tech-Blog" className="project-github" style={{cursor: "pointer"}} rel="noreferrer" target="_blank" >
-                                <FontAwesomeIcon icon={faStackOverflow}/>
+                                <FontAwesomeIcon icon={faGithub}/>
                             </a>
                         </a>
                     </div>
