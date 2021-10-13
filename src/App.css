@@ -111,3 +111,7 @@ h2{
 .skill-list{
   list-style-type: none;
 }
+
+.error-text{
+  color: rgb(189, 3, 3);
+}
